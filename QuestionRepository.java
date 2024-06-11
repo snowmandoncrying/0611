@@ -10,6 +10,13 @@ public interface QuestionRepository extends JpaRepository<QuestionEntity	, 	Inte
 	List<QuestionEntity> findBySubjectLike(String subject);
 }
 
+	// findBySubjectOrContent() 
+	// findBySubjectBetween
+	// findBySubjectLike
+	// findBySubjectIn	- in 연산자
+	// findBySubjectOrderByCreateDateAsc - 날짜순으로 정렬
+	// findBySubjectOrderByCreateDateDesc - 날짜순으로 
+
 1. **인터페이스 이름과 역할**
     - 인터페이스 이름: `QuestionRepository`
     - 역할: 데이터베이스에서 질문을 저장하고 불러오는데 사용됩니다.
